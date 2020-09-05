@@ -1,9 +1,8 @@
 # java-data-structure-load-testing
-📌 If you found this work to be helpful, consider supporting me by buying me a [☕ ko-fi](https://ko-fi.com/yuelchen) :)
-
-
-### 👋 Description
 This project is to create a program for determining data structure performance against concurrent threads with a given load size.
+
+### 👋 Hello 👋
+If you found this work to be helpful, consider supporting me by buying me a [☕ ko-fi](https://ko-fi.com/yuelchen) :)
 
 ---
 ### 🔍 Results (MS means milliseconds)
