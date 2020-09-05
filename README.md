@@ -1,7 +1,9 @@
 # java-data-structure-load-testing
-This project is to create a program for determining data structure performance against concurrent threads with a given load size.
+📌 If you found this work to be helpful, consider supporting me by buying me a [☕ ko-fi](https://ko-fi.com/yuelchen) :)
 
-If you found this work to be helpful and would like more free content and resources such as this, consider supporting me at [ko-fi](https://ko-fi.com/yuelchen) 😜
+
+### 👋 Description
+This project is to create a program for determining data structure performance against concurrent threads with a given load size.
 
 ---
 ### 🔍 Results (MS means milliseconds)
