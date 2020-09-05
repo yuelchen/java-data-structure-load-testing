@@ -2,16 +2,7 @@
 This project is to create a program for determining data structure performance against concurrent threads with a given load size.
 
 ---
-### Data Structures Included
-#### Maps
-* Hashtable
-* HashMap
-* TreeMap (with thread-safe parameter option)
-* ConcurrentHashMap
-* LinkedHashMap
-
----
-### Results Explained (MS means milliseconds):
+### Results (MS means milliseconds):
 * Gives the time it took (in MS) for a given thread to complete. 
 * Gives the time it took (in MS) for executor to complete and shutdown successfully. 
 
@@ -33,3 +24,11 @@ This project is to create a program for determining data structure performance a
 * macroseconds / 1000 = milliseconds
 * milliseconds / 1000 = seconds
 
+---
+### Types of Data Structures Included
+#### Maps
+* Hashtable
+* HashMap
+* TreeMap (with thread-safe parameter option)
+* ConcurrentHashMap
+* LinkedHashMap
