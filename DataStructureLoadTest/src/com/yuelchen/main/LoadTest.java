@@ -5,6 +5,7 @@ import com.yuelchen.load.ConcurrentHashMapLoadTest;
 import com.yuelchen.load.HashMapLoadTest;
 import com.yuelchen.load.HashtableLoadTest;
 import com.yuelchen.load.LinkedHashMapLoadTest;
+import com.yuelchen.load.LinkedListLoadTest;
 import com.yuelchen.load.TreeMapLoadTest;
 
 /**
@@ -78,5 +79,11 @@ public class LoadTest {
 				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
 		arraylistTest.runPutLoadResult();
 		arraylistTest.runGetLoadResult();
+		
+		System.out.println("\nLinkedList Load Test: ");
+		LinkedListLoadTest linkedListTest = new LinkedListLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		linkedListTest.runPutLoadResult();
+		linkedListTest.runGetLoadResult();
 	}
 }
