@@ -34,3 +34,5 @@ If you found this work to be helpful and would like support me, please consider 
 * TreeMap (with thread-safe parameter option)
 * ConcurrentHashMap
 * LinkedHashMap
+* ArrayList
+* LinkedList
