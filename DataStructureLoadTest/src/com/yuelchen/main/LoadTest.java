@@ -1,6 +1,6 @@
 package com.yuelchen.main;
 
-import com.yuelchen.load.ArraylistLoadTest;
+import com.yuelchen.load.ArrayListLoadTest;
 import com.yuelchen.load.ConcurrentHashMapLoadTest;
 import com.yuelchen.load.HashMapLoadTest;
 import com.yuelchen.load.HashtableLoadTest;
@@ -75,7 +75,7 @@ public class LoadTest {
 		treeMapTest.runGetLoadResult();
 		
 		System.out.println("\nArrayList Load Test: ");
-		ArraylistLoadTest arraylistTest = new ArraylistLoadTest(
+		ArrayListLoadTest arraylistTest = new ArrayListLoadTest(
 				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
 		arraylistTest.runPutLoadResult();
 		arraylistTest.runGetLoadResult();
