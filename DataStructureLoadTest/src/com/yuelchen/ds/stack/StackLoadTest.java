@@ -52,7 +52,7 @@ public class StackLoadTest {
 	/**
 	 * Executes GET mapping request against loadCount x threadCount.
 	 */
-	public void runGetLoadResults() {
+	public void runGetLoadResult() {
 		try {
 			//store start time (nano seconds) and initialize executor thread count
 			long executorStartTime = System.nanoTime();
@@ -108,7 +108,7 @@ public class StackLoadTest {
 	/**
 	 * Executes PUT mapping request against loadCount x threadCount.
 	 */
-	public void runPutLoadResults() {
+	public void runPutLoadResult() {
 		try {
 			//store start time (nano seconds) and initialize executor thread count
 			long executorStartTime = System.nanoTime();
