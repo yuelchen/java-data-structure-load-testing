@@ -44,7 +44,7 @@ public abstract class QueueLoadTest {
 	//====================================================================================================
 	
 	/**
-	 * Executes GET mapping request against loadCount x threadCount.
+	 * Executes Contains mapping request against loadCount x threadCount.
 	 */
 	public void runContainLoadResult() {
 		try {
