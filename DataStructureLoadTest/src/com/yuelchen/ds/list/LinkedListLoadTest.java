@@ -1,4 +1,4 @@
-package com.yuelchen.load;
+package com.yuelchen.ds.list;
 
 import java.util.LinkedList;
 

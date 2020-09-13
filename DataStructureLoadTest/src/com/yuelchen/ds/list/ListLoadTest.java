@@ -1,4 +1,4 @@
-package com.yuelchen.load;
+package com.yuelchen.ds.list;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -7,6 +7,13 @@ import java.util.concurrent.TimeUnit;
 
 import com.yuelchen.util.Calculate;
 
+/**
+ * ListLoadTest is used for testing load against List data structure. 
+ * 
+ * @author	yuelchen
+ * @version	1.0.0
+ * @since	2020-09-04
+ */
 public abstract class ListLoadTest {
 	
 	/**
@@ -19,7 +26,7 @@ public abstract class ListLoadTest {
 	/**
 	 * Given thread count, default value is 5.
 	 */
-	protected int threadCount= 5;
+	protected int threadCount = 5;
 	
 	//====================================================================================================
 	
@@ -41,6 +48,9 @@ public abstract class ListLoadTest {
 	
 	//====================================================================================================
 	
+	/**
+	 * Executes GET mapping request against loadCount x threadCount.
+	 */
 	public void runGetLoadResult() {
 		try {
 			//store start time (nano seconds) and initialize executor thread count
@@ -54,7 +64,7 @@ public abstract class ListLoadTest {
 					//runnable method which executes get random number 
 					public void run() {
 						long threadStartTime = System.nanoTime();
-						for (int load = 0; load < loadCount; load++) {
+						for(int load = 0; load < loadCount; load++) {
 							//generate random number and makes get call
 							String randomNumber = String.valueOf(
 									Math.ceil(Math.random() * loadCount));
@@ -85,16 +95,18 @@ public abstract class ListLoadTest {
 					+ "'%d' threads in '%d ms'", loadCount, threadCount, difference));
 			
 		} catch(InterruptedException e) {
-			System.out.println(String.format("Unable to complete put load test due to "
+			System.out.println(String.format("Unable to complete get load test due to "
 					+ "InterruptedException with message '%s'; caused by '%s'",
 					e.getMessage(), e.getCause().toString()));
 		}
 	}
 	
 	//====================================================================================================
-	
-	public void runPutLoadResult() {
-		
+
+	/**
+	 * Executes PUT mapping request against loadCount x threadCount.
+	 */
+	public void runPutLoadResult() {		
 		try {
 			//store start time (nano seconds) and initialize executor thread count
 			long executorStartTime = System.nanoTime();
@@ -107,7 +119,7 @@ public abstract class ListLoadTest {
 					//runnable method which executes get random number 
 					public void run() {
 						long threadStartTime = System.nanoTime();
-						for (int load = 0; load < loadCount; load++) {
+						for(int load = 0; load < loadCount; load++) {
 							//generate random number and makes get call
 							String randomNumber = String.valueOf(
 									Math.ceil(Math.random() * loadCount));

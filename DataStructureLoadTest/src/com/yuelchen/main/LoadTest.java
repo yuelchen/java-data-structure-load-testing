@@ -1,12 +1,12 @@
 package com.yuelchen.main;
 
-import com.yuelchen.load.ArrayListLoadTest;
-import com.yuelchen.load.ConcurrentHashMapLoadTest;
-import com.yuelchen.load.HashMapLoadTest;
-import com.yuelchen.load.HashtableLoadTest;
-import com.yuelchen.load.LinkedHashMapLoadTest;
-import com.yuelchen.load.LinkedListLoadTest;
-import com.yuelchen.load.TreeMapLoadTest;
+import com.yuelchen.ds.list.ArrayListLoadTest;
+import com.yuelchen.ds.list.LinkedListLoadTest;
+import com.yuelchen.ds.map.ConcurrentHashMapLoadTest;
+import com.yuelchen.ds.map.HashMapLoadTest;
+import com.yuelchen.ds.map.HashtableLoadTest;
+import com.yuelchen.ds.map.LinkedHashMapLoadTest;
+import com.yuelchen.ds.map.TreeMapLoadTest;
 
 /**
  * Used for invoking load test for different data structures. 

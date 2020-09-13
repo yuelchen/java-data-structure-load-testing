@@ -1,4 +1,4 @@
-package com.yuelchen.load;
+package com.yuelchen.ds.map;
 
 import java.util.Hashtable;
 

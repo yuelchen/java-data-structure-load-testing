@@ -1,4 +1,4 @@
-package com.yuelchen.load;
+package com.yuelchen.ds.map;
 
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
@@ -52,8 +52,7 @@ public abstract class MapLoadTest {
 	/**
 	 * Executes GET mapping request against loadCount x threadCount.
 	 */
-	public void runGetLoadResult() {
-		
+	public void runGetLoadResult() {		
 		try {
 			//store start time (nano seconds) and initialize executor thread count
 			long executorStartTime = System.nanoTime();
@@ -66,7 +65,7 @@ public abstract class MapLoadTest {
 					//runnable method which executes get random number 
 					public void run() {
 						long threadStartTime = System.nanoTime();
-						for (int load = 0; load < loadCount; load++) {
+						for(int load = 0; load < loadCount; load++) {
 							
 							//generate random number and makes get call
 							String randomNumber = String.valueOf(
@@ -109,8 +108,7 @@ public abstract class MapLoadTest {
 	/**
 	 * Executes PUT mapping request against loadCount x threadCount.
 	 */
-	public void runPutLoadResult() {
-		
+	public void runPutLoadResult() {		
 		try {
 			//store start time (nano seconds) and initialize executor thread count
 			long executorStartTime = System.nanoTime();
@@ -123,7 +121,7 @@ public abstract class MapLoadTest {
 					//runnable method which executes get random number 
 					public void run() {
 						long threadStartTime = System.nanoTime();
-						for (int load = 0; load < loadCount; load++) {
+						for(int load = 0; load < loadCount; load++) {
 							
 							//generate random number and makes get call
 							String randomNumber = String.valueOf(
