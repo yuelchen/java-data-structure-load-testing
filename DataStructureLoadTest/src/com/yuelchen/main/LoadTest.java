@@ -7,6 +7,7 @@ import com.yuelchen.ds.map.HashMapLoadTest;
 import com.yuelchen.ds.map.HashtableLoadTest;
 import com.yuelchen.ds.map.LinkedHashMapLoadTest;
 import com.yuelchen.ds.map.TreeMapLoadTest;
+import com.yuelchen.ds.stack.StackLoadTest;
 
 /**
  * Used for invoking load test for different data structures. 
@@ -85,5 +86,11 @@ public class LoadTest {
 				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
 		linkedListTest.runPutLoadResult();
 		linkedListTest.runGetLoadResult();
+		
+		System.out.println("\nStack Load Test: ");
+		StackLoadTest stackTest = new StackLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		stackTest.runPutLoadResult();
+		stackTest.runGetLoadResult();
 	}
 }
