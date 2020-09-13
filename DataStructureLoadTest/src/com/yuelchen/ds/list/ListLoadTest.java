@@ -35,6 +35,8 @@ public abstract class ListLoadTest {
 	 */
 	protected List<String> listLoad;
 	
+	//====================================================================================================
+	
 	/**
 	 * Constructor
 	 * 
@@ -91,7 +93,7 @@ public abstract class ListLoadTest {
 			long executorEndTime = System.nanoTime();
 			long difference = Calculate.getDifferenceMilliSeconds(
 					executorEndTime, executorStartTime);
-			System.out.println(String.format("Executor terminated for put load of '%d' and "
+			System.out.println(String.format("Executor terminated for get load of '%d' and "
 					+ "'%d' threads in '%d ms'", loadCount, threadCount, difference));
 			
 		} catch(InterruptedException e) {
@@ -131,7 +133,7 @@ public abstract class ListLoadTest {
 						long difference = Calculate.getDifferenceMilliSeconds(
 								threadEndTime, threadStartTime);
 						System.out.println(String.format("\t- Thread process completed "
-								+ "a load of '%d' get operations in '%d ms'", 
+								+ "a load of '%d' put operations in '%d ms'", 
 								loadCount, difference));
 					}
 					

@@ -134,7 +134,7 @@ public abstract class MapLoadTest {
 						long difference = Calculate.getDifferenceMilliSeconds(
 								threadEndTime, threadStartTime);
 						System.out.println(String.format("\t- Thread process completed "
-								+ "a load of '%d' get operations in '%d ms'", 
+								+ "a load of '%d' put operations in '%d ms'", 
 								loadCount, difference));
 					}
 					
