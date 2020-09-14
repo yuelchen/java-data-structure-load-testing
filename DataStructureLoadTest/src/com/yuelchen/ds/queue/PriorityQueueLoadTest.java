@@ -19,7 +19,7 @@ public class PriorityQueueLoadTest extends QueueLoadTest {
 	 * @param loadCount			the size of iterations per thread for test.
 	 * @param threadCount		the number of threads for test.
 	 */
-	protected PriorityQueueLoadTest(int loadCount, int threadCount) {
+	public PriorityQueueLoadTest(int loadCount, int threadCount) {
 		super(loadCount, threadCount);
 		this.queueLoad = new PriorityQueue<String>();
 	}
