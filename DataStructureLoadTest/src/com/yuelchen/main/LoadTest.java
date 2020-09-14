@@ -8,6 +8,9 @@ import com.yuelchen.ds.map.HashtableLoadTest;
 import com.yuelchen.ds.map.LinkedHashMapLoadTest;
 import com.yuelchen.ds.map.TreeMapLoadTest;
 import com.yuelchen.ds.queue.ConcurrentLinkedQueueLoadTest;
+import com.yuelchen.ds.queue.PriorityBlockingQueueLoadTest;
+import com.yuelchen.ds.queue.PriorityQueueLoadTest;
+import com.yuelchen.ds.queue.SynchronousQueueLoadTest;
 import com.yuelchen.ds.stack.StackLoadTest;
 
 /**
@@ -99,5 +102,23 @@ public class LoadTest {
 				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
 		concurrentLinkedQueueTest.runPutLoadResult();
 		concurrentLinkedQueueTest.runContainLoadResult();
+		
+		System.out.println("\nPriority Queue Load Test: ");
+		PriorityQueueLoadTest priorityQueueTest = new PriorityQueueLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		priorityQueueTest.runPutLoadResult();
+		priorityQueueTest.runContainLoadResult();
+		
+		System.out.println("\nPriority Blocking Queue Load Test: ");
+		PriorityBlockingQueueLoadTest priorityBlockingQueueTest = new PriorityBlockingQueueLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		priorityBlockingQueueTest.runPutLoadResult();
+		priorityBlockingQueueTest.runContainLoadResult();
+		
+		System.out.println("\nSynchronous Queue Load Test: ");
+		SynchronousQueueLoadTest SynchronousQueueTest = new SynchronousQueueLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		SynchronousQueueTest.runPutLoadResult();
+		SynchronousQueueTest.runContainLoadResult();		
 	}
 }
