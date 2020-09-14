@@ -7,6 +7,7 @@ import com.yuelchen.ds.map.HashMapLoadTest;
 import com.yuelchen.ds.map.HashtableLoadTest;
 import com.yuelchen.ds.map.LinkedHashMapLoadTest;
 import com.yuelchen.ds.map.TreeMapLoadTest;
+import com.yuelchen.ds.queue.ConcurrentLinkedQueueLoadTest;
 import com.yuelchen.ds.stack.StackLoadTest;
 
 /**
@@ -92,5 +93,11 @@ public class LoadTest {
 				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
 		stackTest.runPutLoadResult();
 		stackTest.runGetLoadResult();
+		
+		System.out.println("\nConcurrentLinkedQueue Load Test: ");
+		ConcurrentLinkedQueueLoadTest concurrentLinkedQueueTest = new ConcurrentLinkedQueueLoadTest(
+				DEFAULT_LOAD_SIZE_PER_THREAD, DEFAULT_THREAD_SIZE);
+		concurrentLinkedQueueTest.runPutLoadResult();
+		concurrentLinkedQueueTest.runContainLoadResult();
 	}
 }
