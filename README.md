@@ -29,10 +29,22 @@ If you found this work to be helpful and would like support me, please consider 
 
 ---
 ### ☎️ Data Structures 
+#### Map(s)
 * Hashtable
 * HashMap
 * TreeMap (with thread-safe parameter option)
 * ConcurrentHashMap
 * LinkedHashMap
+
+#### List(s)
 * ArrayList
 * LinkedList
+
+#### Stack(s)
+* Stack
+
+#### Queue(s)
+* PriorityQueue
+* PriorityBlockingQueue
+* ConcurrentLinkedQueue
+* SynchronousQueue
