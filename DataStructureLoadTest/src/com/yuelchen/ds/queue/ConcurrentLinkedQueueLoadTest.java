@@ -19,7 +19,7 @@ public class ConcurrentLinkedQueueLoadTest extends QueueLoadTest {
 	 * @param loadCount			the size of iterations per thread for test.
 	 * @param threadCount		the number of threads for test.
 	 */
-	protected ConcurrentLinkedQueueLoadTest(int loadCount, int threadCount) {
+	public ConcurrentLinkedQueueLoadTest(int loadCount, int threadCount) {
 		super(loadCount, threadCount);
 		this.queueLoad = new ConcurrentLinkedQueue<String>();
 	}
